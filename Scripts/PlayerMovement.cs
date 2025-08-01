@@ -19,7 +19,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (!HasInputAuthority) return;
 
-        // Nhận input từ người chơi local
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         movement = new Vector2(moveX, moveY).normalized;
