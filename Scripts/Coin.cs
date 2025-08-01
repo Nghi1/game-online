@@ -17,8 +17,8 @@ public class CoinSpawner : NetworkBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f); // cứ 5s spawn 1 coin
-            Vector2 randomPos = new Vector2(Random.Range(-5f, 6f), 5f); // spawn phía trên, để nó rơi xuống
+            yield return new WaitForSeconds(5f); 
+            Vector2 randomPos = new Vector2(Random.Range(-5f, 6f), 5f);
 
             Runner.Spawn(coinPrefab, randomPos, Quaternion.identity, null);
         }
